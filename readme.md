@@ -1,7 +1,22 @@
-This is a sintraa api with active record as the (orm) and sqlite database
+> This is a sinatra api with active record as the (orm) on a sqlite database
 
-Start Sintraa server
+# Getting started
 
+install project dependencies
+
+```ruby
+bundle install
 ```
-rackup config.ru
+
+migrate database then seed data
+
+```ruby
+rake db:migrate
+rake db:seed
+```
+
+run sinatra server
+
+```ruby
+rake server
 ```
