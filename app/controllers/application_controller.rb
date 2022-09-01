@@ -9,11 +9,11 @@ class ApplicationController < Sinatra::Base
     Fruit.all.to_json
   end
   
-  get '/users' do
+  get '/characters' do
     User.all.to_json
   end
   
-  get '/users/:id' do
+  get '/characters/:id' do
     user_data = User.find(params[:id])
     # i had to parse it into json twice because the out putting string in 
     # {
@@ -39,13 +39,13 @@ class ApplicationController < Sinatra::Base
     }.to_json
   end
   
-  delete "/destory-user/:id" do
+  delete "/destory-character/:id" do
     user_data = User.find(params[:id])
-    user_data.destory
+    user_data.destroy
     user_data.to_json
   end
 
-  put "/update_user" do
+  put "/update-character" do
     data = JSON.parse request.body.read
     user_data = User.find(data['user_id'])
     # if data["key"] is empty default to old values
