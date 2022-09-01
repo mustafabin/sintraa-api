@@ -52,25 +52,27 @@ run sinatra server
 
 **Example Response:**
 
-```JSON
+```javascript
 [
-     {
-        "id": 30,
-        "name": "Dracule Mihawk",
-        "email": "DraculeMihawk@bounty.com",
-        "password": "If I can't even protect my captain's dream, then whatever ambition I have is nothing but talk! Luffy must be the man who becomes the Pirate King!",
-        "created_at": "2022-08-31T21:06:27.566Z",
-        "updated_at": "2022-08-31T21:06:27.566Z"
-    },
-    {
-        "id": 31,
-        "name": "Bartholomew Kuma",
-        "email": "BartholomewKuma@bounty.com",
-        "password": "To true friendship, how long you've known each other means nothing.",
-        "created_at": "2022-08-31T21:06:27.568Z",
-        "updated_at": "2022-08-31T21:06:27.568Z"
-    }
-]
+  {
+    id: 30,
+    name: "Dracule Mihawk",
+    email: "DraculeMihawk@bounty.com",
+    password:
+      "If I can't even protect my captain's dream, then whatever ambition I have is nothing but talk! Luffy must be the man who becomes the Pirate King!",
+    created_at: "2022-08-31T21:06:27.566Z",
+    updated_at: "2022-08-31T21:06:27.566Z",
+  },
+  {
+    id: 31,
+    name: "Bartholomew Kuma",
+    email: "BartholomewKuma@bounty.com",
+    password:
+      "To true friendship, how long you've known each other means nothing.",
+    created_at: "2022-08-31T21:06:27.568Z",
+    updated_at: "2022-08-31T21:06:27.568Z",
+  },
+];
 ```
 
 <div id='/detail'></div>
@@ -95,7 +97,7 @@ run sinatra server
 
 **Example Response:**
 
-```JSON
+```javascript
 {
     "user": {
         "id": 31,
@@ -139,30 +141,30 @@ run sinatra server
 
 **Example Response:**
 
-```JSON
+```javascript
 [
-    {
-        "id": 21,
-        "name": "Ishi Ishi no Mi",
-        "user_id": "26",
-        "created_at": "2022-08-31T21:06:27.559Z",
-        "updated_at": "2022-08-31T21:06:27.559Z"
-    },
-    {
-        "id": 22,
-        "name": "Ori Ori no Mi",
-        "user_id": "27",
-        "created_at": "2022-08-31T21:06:27.561Z",
-        "updated_at": "2022-08-31T21:06:27.561Z"
-    },
-    {
-        "id": 23,
-        "name": "Giro Giro no Mi",
-        "user_id": "28",
-        "created_at": "2022-08-31T21:06:27.562Z",
-        "updated_at": "2022-08-31T21:06:27.562Z"
-    }
-]
+  {
+    id: 21,
+    name: "Ishi Ishi no Mi",
+    user_id: "26",
+    created_at: "2022-08-31T21:06:27.559Z",
+    updated_at: "2022-08-31T21:06:27.559Z",
+  },
+  {
+    id: 22,
+    name: "Ori Ori no Mi",
+    user_id: "27",
+    created_at: "2022-08-31T21:06:27.561Z",
+    updated_at: "2022-08-31T21:06:27.561Z",
+  },
+  {
+    id: 23,
+    name: "Giro Giro no Mi",
+    user_id: "28",
+    created_at: "2022-08-31T21:06:27.562Z",
+    updated_at: "2022-08-31T21:06:27.562Z",
+  },
+];
 ```
 
 <div id='/eat-devil-fruit'></div>
@@ -181,7 +183,7 @@ run sinatra server
 
 #### Example Body
 
-```JSON
+```javascript
 {
     "user_id": 33,
     "devil_fruit":"Hito Hito no mi"
@@ -190,7 +192,7 @@ run sinatra server
 
 **Example Response:**
 
-```JSON
+```javascript
 {
     "user": {
         "id": 33,
@@ -235,7 +237,7 @@ run sinatra server
 
 #### Example Body
 
-```JSON
+```javascript
 {
     "user_id": 33,
     "name": "Usopp",
@@ -247,7 +249,7 @@ run sinatra server
 
 **Example Response:**
 
-```JSON
+```javascript
 {
     "name": "Usopp",
     "email": "Usopp@elbaf.eastblue",
