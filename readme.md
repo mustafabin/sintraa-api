@@ -75,7 +75,7 @@ run sinatra server
 
 <div id='/detail'></div>
 
-### `/characters/:id` – All Characters
+### `/characters/:id` – Character Details
 
 **Link**
 
@@ -119,7 +119,7 @@ run sinatra server
 
 <div id='/fruits'></div>
 
-### `/fruits` – All Characters
+### `/fruits` – All Devil Fruits
 
 **Link**
 
@@ -167,7 +167,7 @@ run sinatra server
 
 <div id='/eat-devil-fruit'></div>
 
-### `/eat-devil-fruit` – All Characters
+### `/eat-devil-fruit` – Add devil fruit to a character
 
 **Link**
 
